@@ -9,15 +9,11 @@
     top: 0;
     width: 100%;
     background-color: rgb(134, 134, 134);
-
     display: flex;
     justify-content: space-between;
     padding: 1rem 0 .5rem 0;
     border-style: none;
-    // border: 1px solid white;
     z-index: 2 !important;
-    cursor: none;
-    // margin-bottom: 100px;
     transition: .5s;
   }
 
@@ -37,7 +33,6 @@
   .wolfcycle-logo {
     object-fit: cover;
     max-width: 17rem;
-    cursor: none;
   }
 
   .crwd-logo {
@@ -64,7 +59,6 @@
     text-decoration: none;
     list-style: none;
     margin-right: 1rem;
-    cursor: none;
       -webkit-transition: all 0.2s linear;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
