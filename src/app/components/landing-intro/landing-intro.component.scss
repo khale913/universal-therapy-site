@@ -8,16 +8,33 @@
     position: relative;
     text-align: center;
     color: white;
+    background-color: #000000;
+    // opacity: 0.5;
   }
 
+
   .container img {
-    height: 60vh;
+    height: 100vh;
     object-fit: cover;
   }
 
-  .centered {
+.bottom-right {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    bottom: 30%;
+    right: 150px;
+    width: 630px;
+  }
+
+  .bottom-right h2 {
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 60px;
+    text-align: right;
+    padding-bottom: 25px;
+  }
+
+  .bottom-right p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
   }

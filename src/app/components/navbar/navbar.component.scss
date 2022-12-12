@@ -8,10 +8,10 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgb(134, 134, 134);
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0 .5rem 0;
+    padding: 20px 0;
     border-style: none;
     z-index: 2 !important;
     transition: .5s;
@@ -55,7 +55,7 @@
   .tab {
     font-family: 'Gotham-Book';
     font-size: 1rem;
-    color: white;
+    color: black;
     text-decoration: none;
     list-style: none;
     margin-right: 1rem;
@@ -72,11 +72,11 @@
   }
 
   .active-tab {
-    color: #4CF233;
+    color: red;
   }
 
   .active-tab:hover {
-    color: #4CF233;
+    color: red;
   }
 
   .sidenav {
@@ -130,7 +130,7 @@
   }
 
   .active-mobile-tab {
-    color: #4CF233 !important;
+    color: black !important;
   }
 
   .hamburger {
