@@ -1,1 +1,37 @@
-<p>navbar works!</p>
+<div class="navbar-container">
+    <div class="navbar-logo-container">
+        <h2 class="crwd-logo" (click)="navigateSection('')">
+            Universal Therapy</h2>
+        <p>billing</p>
+    </div>
+
+    <div class="navbar-tabs-container">
+        <ul class="tabs-ul">
+            <li [ngClass]="{'active-tab': count === 1}" class="tab" (click)="navigateSection('')">Home</li>
+            <li [ngClass]="{'active-tab': count === 2}" class="tab" (click)="navigateSection('experiential-reality')">
+                ExR</li>
+            <li [ngClass]="{'active-tab': count === 3}" class="tab" (click)="navigateSection('business')">
+                Business</li>
+            <li [ngClass]="{'active-tab': count === 4}" class="tab" (click)="navigateSection('consumer')">
+                Consumer</li>
+            <li [ngClass]="{'active-tab': count === 5}" class="tab" (click)="navigateSection('products')">Products
+            </li>
+        </ul>
+    </div>
+    <span class="hamburger" style="font-size:2.5rem;cursor:pointer; margin-right: 1rem; color: #E7FF6D"
+        (click)="operateNav()">&#9776;</span>
+</div>
+
+<div id="mySidenav" class="sidenav" [ngClass]="{'nav-open': navOpen === true}">
+    <!-- <a href="javascript:void(0)" class="closebtn" (click)="operateNav()">&times;</a> -->
+    <a [ngClass]="{'active-mobile-tab': count === 1}" class="mobile-tab" (click)="navigateSection('')">Home</a>
+    <a [ngClass]="{'active-mobile-tab':  count === 2}" class="mobile-tab"
+        (click)="navigateSection('experiential-reality')">ExR</a>
+    <a [ngClass]="{'active-mobile-tab':  count === 3}" class="mobile-tab"
+        (click)="navigateSection('business')">Business</a>
+    <a [ngClass]="{'active-mobile-tab':  count === 4}" class="mobile-tab"
+        (click)="navigateSection('consumer')">Consumer</a>
+    <a [ngClass]="{'active-mobile-tab': count === 5}" class="mobile-tab"
+        (click)="navigateSection('products')">Products</a>
+
+</div>

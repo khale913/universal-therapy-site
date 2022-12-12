@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(134, 134, 134);
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 .5rem 0;
+    border-style: none;
+    // border: 1px solid white;
+    z-index: 2 !important;
+    cursor: none;
+    // margin-bottom: 100px;
+    transition: .5s;
+  }
+
+  .navbar-logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 100px;
+    color: black;
+  }
+
+  .navbar-logo-container  p{
+    color: black
+  }
+
+  .wolfcycle-logo {
+    object-fit: cover;
+    max-width: 17rem;
+    cursor: none;
+  }
+
+  .crwd-logo {
+    font-size: 30px;
+    color: black;
+    font-family: 'Gotham-Book';
+    padding: 10px;
+  }
+
+  .navbar-tabs-container {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+
+  .tabs-ul {
+    display: flex;
+  }
+
+  .tab {
+    font-family: 'Gotham-Book';
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 1rem;
+    cursor: none;
+      -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+
+  .tab:hover {
+    color: #b2b2b2;
+    transition: .2s;
+    transition-delay: .1s;
+  }
+
+  .active-tab {
+    color: #4CF233;
+  }
+
+  .active-tab:hover {
+    color: #4CF233;
+  }
+
+  .sidenav {
+    margin-top: 72px;
+
+    height: 100%;
+    z-index: 999999999999 !important;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #510D76;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+  padding: 14px 25px 14px 20px;
+  margin-right: 20px;
+  border-bottom: 1px solid grey;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .nav-open {
+    width: 60%
+  }
+
+  .mobile-tab {
+    color: white !important;
+    font-family: 'Gotham-Book';
+    padding-bottom: 1rem;
+
+  }
+
+  .active-mobile-tab {
+    color: #4CF233 !important;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .scroll-header {
+    background-color: rgba(0, 0, 0, 0.733);
+    transition: .5s;
+  }
+
+  @media screen and (max-width: 1150px) {
+    .navbar-logo-container {
+      margin-left: 50px;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    .wolfcycle-logo {
+      max-width: 13rem;
+    }
+
+    .navbar-logo-container {
+      display: flex;
+      align-items: flex-end;
+      margin-left: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    .navbar-container {
+      cursor: default;
+    }
+
+
+    .wolfcycle-logo {
+      cursor: pointer;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .tabs-ul {
+      display: none;
+    }
+
+    .hamburger {
+      display: block;
+    }
+  }
