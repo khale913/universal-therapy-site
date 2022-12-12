@@ -12,6 +12,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PageIntroComponent } from './reusable-components/page-intro/page-intro.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactLeadComponent } from './reusable-components/contact-lead/contact-lead.component';
+import { LandingIntroComponent } from './components/landing-intro/landing-intro.component';
+import { LandingServicesComponent } from './components/landing-services/landing-services.component';
+import { LandingAboutComponent } from './components/landing-about/landing-about.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { ContactLeadComponent } from './reusable-components/contact-lead/contact
     NavbarComponent,
     PageIntroComponent,
     FooterComponent,
-    ContactLeadComponent
+    ContactLeadComponent,
+    LandingIntroComponent,
+    LandingServicesComponent,
+    LandingAboutComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,
