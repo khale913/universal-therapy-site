@@ -49,6 +49,7 @@
 
   .tabs-ul {
     display: flex;
+    align-items: center;
   }
 
   .tab {
@@ -68,6 +69,13 @@
     color: #b2b2b2;
     transition: .2s;
     transition-delay: .1s;
+  }
+
+  .contact {
+    background-color: rgb(55, 89, 224);
+    padding: 8px 10px;
+    border-radius: 2px;
+    color: white;
   }
 
   .active-tab {
