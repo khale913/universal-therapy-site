@@ -8,22 +8,52 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 100px 50px;
+  padding: 100px 80px;
 }
 
 .about-content-container {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: .9;
+  align-items: flex-start;
+  padding-right: 50px;
 }
 
 .about-img-container {
   display: flex;
   flex: 1;
+  margin-top: 30px;
 }
 
 .about-img-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.about-content-container h3 {
+  font-family: 'Roboto-Bold';
+  font-size: 35px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.about-content-container p {
+  font-family: 'Roboto-Medium';
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.first-p {
+  padding-bottom: 25px;
+}
+
+.learn-more {
+  font-family: 'Roboto';
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  padding: 12px 24px;
+  border: none;
+  margin-top: 20px;
 }
