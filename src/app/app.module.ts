@@ -17,6 +17,7 @@ import { LandingServicesComponent } from './components/landing-services/landing-
 import { LandingAboutComponent } from './components/landing-about/landing-about.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { ContactBarComponent } from './components/contact-bar/contact-bar.component';
+import { WhyUsComponent } from './components/why-us/why-us.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ContactBarComponent } from './components/contact-bar/contact-bar.compon
     LandingServicesComponent,
     LandingAboutComponent,
     TestimonialsComponent,
-    ContactBarComponent
+    ContactBarComponent,
+    WhyUsComponent
   ],
   imports: [
     BrowserModule,
