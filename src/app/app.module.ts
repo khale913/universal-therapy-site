@@ -16,6 +16,7 @@ import { LandingIntroComponent } from './components/landing-intro/landing-intro.
 import { LandingServicesComponent } from './components/landing-services/landing-services.component';
 import { LandingAboutComponent } from './components/landing-about/landing-about.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { ContactBarComponent } from './components/contact-bar/contact-bar.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
     LandingIntroComponent,
     LandingServicesComponent,
     LandingAboutComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    ContactBarComponent
   ],
   imports: [
     BrowserModule,
