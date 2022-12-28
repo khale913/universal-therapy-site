@@ -9,32 +9,127 @@
     text-align: center;
     color: white;
     background-color: #000000;
-    height: 100vh;
+    height: 80vh;
   }
 
 
   .container img {
-    height: 100vh;
+    height: 80vh;
     object-fit: cover;
   }
 
 .bottom-right {
     position: absolute;
-    bottom: 30%;
-    right: 250px;
-    width: 630px;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 20px 0 20px;
+    background-color: rgba(0, 0, 0, 0.2);
   }
 
   .bottom-right h2 {
-    font-family: 'Roboto-Bold', sans-serif;
-    font-size: 60px;
-    text-align: right;
+    font-family: 'Roboto-Black', sans-serif;
+    font-size: 28px;
+    text-align: center;
     padding-bottom: 25px;
+    letter-spacing: .8px;
   }
 
   .bottom-right p {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: right;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+  }
+
+  .learn-btn {
+    cursor: pointer;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    padding: 5px 0;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-size: 17px;
+  }
+
+  @media screen and (min-width: 576px) {
+    .bottom-right {
+      align-items: flex-end;
+    }
+
+    .bottom-right h2 {
+      font-size: 35px;
+      text-align: right;
+    }
+
+    .bottom-right p {
+      font-size: 16px;
+      text-align: right;
+    }
+
+    .learn-btn {
+      width: auto;
+      font-size: 16px;
+      padding: 5px 35px;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .bottom-right {
+      align-items: flex-end;
+      width: 70%;
+      background-color: transparent;
+      padding-right: 50px;
+    }
+
+    .bottom-right h2 {
+      font-size: 45px;
+      text-align: right;
+    }
+
+    .bottom-right p {
+      font-size: 20px;
+      text-align: right;
+    }
+
+    .learn-btn {
+      width: auto;
+      font-size: 20px;
+      padding: 5px 35px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .bottom-right {
+      align-items: flex-end;
+      width: 70%;
+      background-color: transparent;
+      padding-right: 100px;
+    }
+
+    .bottom-right h2 {
+      font-size: 60px;
+      text-align: right;
+    }
+
+    .bottom-right p {
+      font-size: 20px;
+      text-align: right;
+    }
+
+    .learn-btn {
+      width: auto;
+      font-size: 20px;
+      padding: 5px 35px;
+    }
   }
