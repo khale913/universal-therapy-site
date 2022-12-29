@@ -1,28 +1,23 @@
-
-
-<swiper
-  [slidesPerView]="1"
-  [spaceBetween]="30"
-  [keyboard]="{
+<div class="container">
+  <div class="header">
+    <h3>Happy Customers</h3>
+  </div>
+  <swiper [slidesPerView]="1" [spaceBetween]="30" [keyboard]="{
     enabled: true
-  }"
-  [pagination]="{
+  }" [pagination]="{
     clickable: true
-  }"
-  [navigation]="true"
-  class="mySwiper"
->
-  <ng-template swiperSlide>
-    <div>
-      hellos
-    </div>
-    </ng-template
-  ><ng-template swiperSlide>Slide 2</ng-template
-  ><ng-template swiperSlide>Slide 3</ng-template
-  ><ng-template swiperSlide>Slide 4</ng-template
-  ><ng-template swiperSlide>Slide 5</ng-template
-  ><ng-template swiperSlide>Slide 6</ng-template
-  ><ng-template swiperSlide>Slide 7</ng-template
-  ><ng-template swiperSlide>Slide 8</ng-template
-  ><ng-template swiperSlide>Slide 9</ng-template>
-</swiper>
+  }" [navigation]="true" class="mySwiper">
+    <ng-template swiperSlide>
+      <div class="review-container">
+        <img src="https://themewagon.github.io/physicaltherapy/images/person_2.jpg" alt="profile picture">
+        <h3>Test Name</h3>
+        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem similique soluta voluptate expedita ea.
+          Fugiat tempore, praesentium excepturi quae perspiciatis commodi est quidem optio eligendi suscipit dolore odit
+          voluptates consectetur!"</p>
+      </div>
+    </ng-template><ng-template swiperSlide>Slide 2</ng-template><ng-template swiperSlide>Slide
+      3</ng-template><ng-template swiperSlide>Slide 4</ng-template><ng-template swiperSlide>Slide
+      5</ng-template><ng-template swiperSlide>Slide 6</ng-template><ng-template swiperSlide>Slide
+      7</ng-template><ng-template swiperSlide>Slide 8</ng-template><ng-template swiperSlide>Slide 9</ng-template>
+  </swiper>
+</div>
