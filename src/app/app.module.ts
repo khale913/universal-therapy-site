@@ -18,6 +18,7 @@ import { LandingAboutComponent } from './components/landing-about/landing-about.
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { ContactBarComponent } from './components/contact-bar/contact-bar.component';
 import { WhyUsComponent } from './components/why-us/why-us.component';
+import { SwiperModule } from "swiper/angular";
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { WhyUsComponent } from './components/why-us/why-us.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SwiperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
