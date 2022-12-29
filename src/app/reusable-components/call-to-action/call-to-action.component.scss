@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #ea728c;
+}
+
+.inner-block {
+  padding: 125px 15px;
+  color: white;
+  font-family: 'Roboto';
+}
+
+.copy h3 {
+  font-size: 32px;
+  margin-bottom: 1.5rem;
+}
+
+.copy p {
+  font-size: 19px;
+  margin-bottom: 1.5rem;
+  line-height: 28px;
+}
+
+.contact-btn {
+  font-family: 'Roboto-Bold';
+  font-size: 15px;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  border-radius: 30px;
+  width: 100%;
+  padding: 15px 0;
+}
+
+@media screen and (min-width: 572px) {
+.inner-block {
+  max-width: 550px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+}
+
+@media screen and (min-width: 1000px) {
+  .inner-block {
+    max-width: 700px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .inner-block {
+    max-width: 1300px;
+    padding: 100px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .contact-btn {
+    flex: .8;
+    max-width: 300px;
+    margin-left: 200px;
+  }
+
+  .copy {
+    flex: 1.5;
+    max-width: 850px;
+  }
+
+}

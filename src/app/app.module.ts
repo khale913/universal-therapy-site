@@ -19,6 +19,7 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
 import { ContactBarComponent } from './components/contact-bar/contact-bar.component';
 import { WhyUsComponent } from './components/why-us/why-us.component';
 import { SwiperModule } from "swiper/angular";
+import { CallToActionComponent } from './reusable-components/call-to-action/call-to-action.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { SwiperModule } from "swiper/angular";
     LandingAboutComponent,
     TestimonialsComponent,
     ContactBarComponent,
-    WhyUsComponent
+    WhyUsComponent,
+    CallToActionComponent
   ],
   imports: [
     BrowserModule,
